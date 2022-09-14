@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/cubexican-faq-2-landing-page/static/css/main.073c9b0a.css",
+    "main.js": "/react-gh-pages/cubexican-faq-2-landing-page/static/js/main.8415a56e.js",
+    "static/js/787.c4d8f210.chunk.js": "/react-gh-pages/cubexican-faq-2-landing-page/static/js/787.c4d8f210.chunk.js",
+    "static/media/logo.svg": "/react-gh-pages/cubexican-faq-2-landing-page/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/react-gh-pages/cubexican-faq-2-landing-page/index.html",
+    "main.073c9b0a.css.map": "/react-gh-pages/cubexican-faq-2-landing-page/static/css/main.073c9b0a.css.map",
+    "main.8415a56e.js.map": "/react-gh-pages/cubexican-faq-2-landing-page/static/js/main.8415a56e.js.map",
+    "787.c4d8f210.chunk.js.map": "/react-gh-pages/cubexican-faq-2-landing-page/static/js/787.c4d8f210.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.8415a56e.js"
+  ]
+}
