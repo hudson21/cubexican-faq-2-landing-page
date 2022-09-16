@@ -1,0 +1,63 @@
+import { Link } from 'react-router-dom';
+import LogoA from '../../images/logo-a.png';
+
+export default function Navigation() {
+  return (
+    <div className="header-area" id="home">
+      <header className="site-header is-sticky">
+        <nav
+          className="navbar navbar-expand-lg navbar-light is-transparent"
+          id="mainnav"
+        >
+          <div className="container">
+            <Link to="/" className="navbar-brand">
+              <img className="logo logo-dark" alt="logo" src={LogoA} />
+            </Link>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-icon">
+                <i className="fas fa-bars"></i>
+              </span>
+            </button>
+
+            <div
+              className="collapse navbar-collapse justify-content-end"
+              id="navbarTogglerDemo01"
+            >
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <Link to="/about" className="nav-link">
+                    About
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/" className="nav-link">
+                    Pricing Details
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/privacy-policy" className="nav-link">
+                    Privacy Policy
+                  </Link>
+                </li>
+
+                <li className="nav-item">
+                  <a className="btn-menu" href="#">
+                    Subscribe
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+  );
+}
