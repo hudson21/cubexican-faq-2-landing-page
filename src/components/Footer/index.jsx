@@ -21,13 +21,13 @@ export default function Footer() {
               <div className="footer-widget">
                 <ul className="footer-list">
                   <li>
-                    <Link to="/about">About us</Link>
+                    <Link to="/cubexican-faq-2-landing-page/about">About us</Link>
                   </li>
                   <li>
-                    <Link to="/">Pricing Details</Link>
+                    <Link to="/cubexican-faq-2-landing-page">Pricing Details</Link>
                   </li>
                   <li>
-                    <Link to="/privacy-policy">Privacy Policy</Link>
+                    <Link to="/cubexican-faq-2-landing-page/privacy-policy">Privacy Policy</Link>
                   </li>
                 </ul>
               </div>
