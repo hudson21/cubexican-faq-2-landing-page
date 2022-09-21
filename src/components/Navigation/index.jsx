@@ -33,17 +33,23 @@ export default function Navigation() {
             >
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link to="/cubexican-faq-2-landing-page/about" className="nav-link">
+                  <Link
+                    to="/cubexican-faq-2-landing-page/about"
+                    className="nav-link"
+                  >
                     About
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link to="/cubexican-faq-2-landing-page" className="nav-link">
-                    Pricing Details
+                    Pricing
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/cubexican-faq-2-landing-page/privacy-policy" className="nav-link">
+                  <Link
+                    to="/cubexican-faq-2-landing-page/privacy-policy"
+                    className="nav-link"
+                  >
                     Privacy Policy
                   </Link>
                 </li>

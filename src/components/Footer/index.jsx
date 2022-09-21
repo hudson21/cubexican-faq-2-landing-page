@@ -21,13 +21,15 @@ export default function Footer() {
               <div className="footer-widget">
                 <ul className="footer-list">
                   <li>
-                    <Link to="/cubexican-faq-2-landing-page/about">About us</Link>
+                    <Link to="/cubexican-faq-2-landing-page/about">About</Link>
                   </li>
                   <li>
-                    <Link to="/cubexican-faq-2-landing-page">Pricing Details</Link>
+                    <Link to="/cubexican-faq-2-landing-page">Pricing</Link>
                   </li>
                   <li>
-                    <Link to="/cubexican-faq-2-landing-page/privacy-policy">Privacy Policy</Link>
+                    <Link to="/cubexican-faq-2-landing-page/privacy-policy">
+                      Privacy Policy
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -68,7 +70,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-text text-center">
-          <p>© {year} Cubexican, All rights reserved.</p>
+          <p>© {year} Cubexican. All rights reserved.</p>
         </div>
       </div>
     </div>
