@@ -1,0 +1,9 @@
+.policy-container p,
+.policy-container li {
+  text-align: justify !important;
+  padding: 0 20px !important;
+}
+
+.policy-container .sec-text-pad.lead {
+  font-weight: 600 !important;
+}

@@ -11,9 +11,9 @@ export default function Footer() {
           <div className="row">
             <div className="col-md-3">
               <div className="footer-widget">
-                <a href="pricing-aster-v2.html">
+                <Link to="/cubexican-faq-2-landing-page">
                   <img src={FooterLogo} alt="footer-logo" />
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -42,7 +42,7 @@ export default function Footer() {
                 </ul>
                 <div className="social">
                   <div className="social-icon">
-                    <a href="#">
+                    <a href="">
                       <i className="fab fa-facebook-f"></i>
                     </a>
                   </div>

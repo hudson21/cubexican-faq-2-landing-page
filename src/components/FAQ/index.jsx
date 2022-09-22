@@ -90,7 +90,7 @@ export default function FAQ() {
                         application by yourself and then used in your storefront
                         store where you can set CSS settings on real time. Here
                         is a screenshot of how it looks one of our FAQ Designs:
-                        <img src={FAQSampleImg} alt="Faq Sample Image" />
+                        <img src={FAQSampleImg} alt="Faq Sample" />
                       </p>
                     </div>
                   </div>
@@ -126,7 +126,7 @@ export default function FAQ() {
                         questions inside of our app. You can see a sample here:
                         <img
                           src={BasicTextIntegrationImg}
-                          alt="Basic Text Integration Image"
+                          alt="Basic Text Integration"
                         />
                       </p>
                     </div>
@@ -164,7 +164,7 @@ export default function FAQ() {
                         of our app. You can see a sample here:
                         <img
                           src={RichTextIntegrationImg}
-                          alt="Rich Text Integration Image"
+                          alt="Rich Text Integration"
                         />
                       </p>
                     </div>
@@ -202,14 +202,14 @@ export default function FAQ() {
                         <img
                           style={{ marginBottom: '15px' }}
                           src={FAQTab1Img}
-                          alt="FQA Tab 1 Sample Image"
+                          alt="FQA Tab 1 Sample"
                         />
                         <img
                           style={{ marginBottom: '15px' }}
                           src={FAQTab2Img}
-                          alt="FQA Tab 2 Sample Image"
+                          alt="FQA Tab 2 Sample"
                         />
-                        <img src={FAQTab3Img} alt="FQA Tab 3 Sample Image" />
+                        <img src={FAQTab3Img} alt="FQA Tab 3 Sample" />
                       </p>
                     </div>
                   </div>
@@ -244,7 +244,7 @@ export default function FAQ() {
                         It means you can inject certain tags for SEO
                         Optimization like <strong>description</strong>,{' '}
                         <strong>keywords</strong> and <strong>author</strong>{' '}
-                        tags.
+                        tags on your shopify storefront.
                       </p>
                     </div>
                   </div>
