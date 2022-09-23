@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import LogoA from '../../images/logo-a.png';
 import FAQLogo from '../../images/faq-logo-try-2.png';
 
 export default function Navigation() {
