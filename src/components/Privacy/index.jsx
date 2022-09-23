@@ -29,7 +29,11 @@ export default function Privacy() {
           <strong>“Cookies”</strong> are data files that are placed on your
           device or computer and often include an anonymous unique identifier.
           For more information about cookies, and how to disable cookies, visit{' '}
-          <a href="http://www.allaboutcookies.org" target="blank">
+          <a
+            href="http://www.allaboutcookies.org"
+            rel="noreferrer"
+            target="_blank"
+          >
             http://www.allaboutcookies.org
           </a>{' '}
         </li>
@@ -91,7 +95,11 @@ export default function Privacy() {
       <ul>
         <li>
           You can read more about how Shopify uses your Personal Information{' '}
-          <a href="https://www.shopify.com/legal/privacy" target="blank">
+          <a
+            href="https://www.shopify.com/legal/privacy"
+            rel="noreferrer"
+            target="_blank"
+          >
             here
           </a>
           .
@@ -104,9 +112,22 @@ export default function Privacy() {
 
         <li>
           You can read more about how Google uses your Personal Information{' '}
-          <a href="https://www.google.com/intl/en/policies/privacy/">here</a> .
-          You can also opt-out of Google Analytics{' '}
-          <a href="https://tools.google.com/dlpage/gaoptout">here</a>.
+          <a
+            href="https://www.google.com/intl/en/policies/privacy/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            here
+          </a>{' '}
+          . You can also opt-out of Google Analytics{' '}
+          <a
+            href="https://tools.google.com/dlpage/gaoptout"
+            rel="noreferrer"
+            target="_blank"
+          >
+            here
+          </a>
+          .
         </li>
       </ul>
 
@@ -126,7 +147,8 @@ export default function Privacy() {
         <strong>(“NAI”)</strong> educational page at{' '}
         <a
           href="http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work"
-          target="blank"
+          target="_blank"
+          rel="noreferrer"
         >
           http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work
         </a>
