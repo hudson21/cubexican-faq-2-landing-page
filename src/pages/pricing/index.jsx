@@ -42,7 +42,7 @@ export default function PricingPage() {
                   Pricing Tiers
                 </h2>
                 <p className="sec-text-pad lead">
-                  See the pricing tiers available for the{' '}
+                  See the pricing tiers available for{' '}
                   <strong>cubexican-faq-2</strong> shopify application.
                 </p>
               </div>
