@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import LogoA from '../../images/logo-a.png';
+import FAQLogo from '../../images/faq-logo-try-2.png';
 
 export default function Navigation() {
   return (
@@ -11,7 +12,7 @@ export default function Navigation() {
         >
           <div className="container">
             <Link to="/cubexican-faq-2-landing-page" className="navbar-brand">
-              <img className="logo logo-dark" alt="logo" src={LogoA} />
+              <img className="logo logo-dark" alt="logo" src={FAQLogo} />
             </Link>
             <button
               className="navbar-toggler"

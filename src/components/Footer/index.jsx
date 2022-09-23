@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import FooterLogo from '../../images/footer-logo.png';
+import FAQLogo from '../../images/faq-logo-try-2.png';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -12,7 +13,7 @@ export default function Footer() {
             <div className="col-md-3">
               <div className="footer-widget">
                 <Link to="/cubexican-faq-2-landing-page">
-                  <img src={FooterLogo} alt="footer-logo" />
+                  <img className='footer-img' src={FAQLogo} alt="footer-logo" />
                 </Link>
               </div>
             </div>
@@ -38,7 +39,11 @@ export default function Footer() {
             <div className="col-md-3">
               <div className="footer-widget">
                 <ul className="footer-list">
-                  <li>cubexican.sup.shopify@gmail.com</li>
+                  <li>
+                    <a href="mailto:cubexican.sup.shopify@gmail.com">
+                      cubexican.sup.shopify@gmail.com
+                    </a>
+                  </li>
                 </ul>
                 <div className="social">
                   <div className="social-icon">

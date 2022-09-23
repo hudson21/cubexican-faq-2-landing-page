@@ -94,18 +94,19 @@ export default function Privacy() {
           <a href="https://www.shopify.com/legal/privacy" target="blank">
             here
           </a>
+          .
         </li>
 
         <li>
           We also use Google Analytics to help us understand how our customers
-          use the Site
+          use the site.
         </li>
 
         <li>
           You can read more about how Google uses your Personal Information{' '}
           <a href="https://www.google.com/intl/en/policies/privacy/">here</a> .
           You can also opt-out of Google Analytics{' '}
-          <a href="https://tools.google.com/dlpage/gaoptout">here</a>
+          <a href="https://tools.google.com/dlpage/gaoptout">here</a>.
         </li>
       </ul>
 
@@ -129,6 +130,7 @@ export default function Privacy() {
         >
           http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work
         </a>
+        .
       </p>
 
       {/* <p className="sec-text-pad">

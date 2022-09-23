@@ -4,6 +4,7 @@ import RichTextIntegrationImg from './rich-text-integration.png';
 import FAQTab1Img from './faq-tab-1.png';
 import FAQTab2Img from './faq-tab-2.png';
 import FAQTab3Img from './faq-tab-3.png';
+import DynamicQuestionsImg from './dynamic-questions.png';
 
 export default function FAQ() {
   return (
@@ -12,7 +13,9 @@ export default function FAQ() {
         <div className="row justify-content-center">
           <div className="col-lg-6 text-center">
             <div className="sec-heading">
-              <h2 className="sec-title-lg">FREQUENTLY ASKED QUESTIONS</h2>
+              <h2 className="sec-title-lg" style={{ color: '#6480ce' }}>
+                FREQUENTLY ASKED QUESTIONS
+              </h2>
               <p className="lead">
                 Questions you migh have about what are the features offered on
                 the pricing tiers.
@@ -225,7 +228,7 @@ export default function FAQ() {
                         aria-expanded="false"
                         aria-controls="collapseSix"
                       >
-                        What is a SEO Booster Extension ?
+                        What are Dynamic QAs sorted by Clicks ?
                         <span className="faq-icon">
                           <i className="fas fa-chevron-up fa-xs"></i>
                         </span>
@@ -241,10 +244,52 @@ export default function FAQ() {
                   >
                     <div className="card-body">
                       <p>
+                        These are questions that are ordered by the number of
+                        clicks on the question. This mode of questions are
+                        available when you create a FAQ with{' '}
+                        <strong>
+                          <em>Dynamic Type</em>{' '}
+                        </strong>
+                        . You can see a sample here:
+                        <img
+                          src={DynamicQuestionsImg}
+                          alt="Dynamic Questions Sample"
+                        />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="card accordion-custom">
+                  <div className="card-header" id="headingSeven">
+                    <h5 className="mb-0">
+                      <button
+                        className="btn btn-link collapsed text-left"
+                        data-toggle="collapse"
+                        data-target="#collapseSeven"
+                        aria-expanded="false"
+                        aria-controls="collapseSeven"
+                      >
+                        What is a SEO Booster Extension ?
+                        <span className="faq-icon">
+                          <i className="fas fa-chevron-up fa-xs"></i>
+                        </span>
+                      </button>
+                    </h5>
+                  </div>
+
+                  <div
+                    id="collapseSeven"
+                    className="collapse"
+                    aria-labelledby="headingSeven"
+                    data-parent="#accordion"
+                  >
+                    <div className="card-body">
+                      <p>
                         It means you can inject certain tags for SEO
                         Optimization like <strong>description</strong>,{' '}
                         <strong>keywords</strong> and <strong>author</strong>{' '}
-                        tags on your shopify storefront.
+                        meta tags on your shopify storefront.
                       </p>
                     </div>
                   </div>

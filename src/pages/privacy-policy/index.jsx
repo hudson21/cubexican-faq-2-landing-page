@@ -7,7 +7,9 @@ export default function PrivacyPolicyPage() {
         <div className="row justify-content-center">
           <div className="col-lg-12 text-center">
             <div className="sec-heading">
-              <h2 className="sec-title-lg">Privacy Policy</h2>
+              <h2 className="sec-title-lg" style={{ color: '#6480ce' }}>
+                Privacy Policy
+              </h2>
 
               <Privacy />
               {/* <p className="sec-text-pad lead" style={{ textAlign: 'justify' }}>

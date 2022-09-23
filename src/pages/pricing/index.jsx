@@ -1,4 +1,3 @@
-import HeaderImg from '../../images/header.png';
 import PricingHeroImg from './pricing-hero-image.png';
 
 import FAQ from '../../components/FAQ';
@@ -11,9 +10,12 @@ export default function PricingPage() {
           <div className="row align-items-center justify-content-between">
             <div className="col-lg-5 text-center text-lg-left order-last order-lg-first">
               <div className="header-text-lg">
-                <h1 className="sec-title-xl">Pricing</h1>
+                <h1 className="sec-title-xl" style={{ color: '#6480ce' }}>
+                  Pricing
+                </h1>
                 <p className="lead">
-                  Choose the best plan that fits your requirements
+                  Choose the best plan that fits your requirements the
+                  cubexian-faq-2 shopify app.
                 </p>
               </div>
             </div>
@@ -23,7 +25,7 @@ export default function PricingPage() {
                 <img
                   src={PricingHeroImg}
                   className="img-fluid"
-                  alt="Pricing Hero Image"
+                  alt="Pricing Hero"
                 />
               </div>
             </div>
@@ -36,7 +38,9 @@ export default function PricingPage() {
           <div className="row justify-content-center">
             <div className="col-lg-6 text-center">
               <div className="sec-heading">
-                <h2 className="sec-title-lg">Pricing Tiers</h2>
+                <h2 className="sec-title-lg" style={{ color: '#6480ce' }}>
+                  Pricing Tiers
+                </h2>
                 <p className="sec-text-pad lead">
                   See the pricing tiers available for the{' '}
                   <strong>cubexican-faq-2</strong> shopify application.
