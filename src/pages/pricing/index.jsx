@@ -14,7 +14,7 @@ export default function PricingPage() {
                   Pricing
                 </h1>
                 <p className="lead">
-                  Choose the best plan that fits your requirements the
+                  Choose the best plan that fits your requirements for
                   cubexian-faq-2 shopify app.
                 </p>
               </div>
