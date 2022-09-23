@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import FooterLogo from '../../images/footer-logo.png';
 import FAQLogo from '../../images/faq-logo-try-2.png';
 
 export default function Footer() {
@@ -12,8 +11,8 @@ export default function Footer() {
           <div className="row">
             <div className="col-md-3">
               <div className="footer-widget">
-                <Link to="/cubexican-faq-2-landing-page">
-                  <img className='footer-img' src={FAQLogo} alt="footer-logo" />
+                <Link to="/">
+                  <img className="footer-img" src={FAQLogo} alt="footer-logo" />
                 </Link>
               </div>
             </div>
@@ -22,15 +21,13 @@ export default function Footer() {
               <div className="footer-widget">
                 <ul className="footer-list">
                   <li>
-                    <Link to="/cubexican-faq-2-landing-page/about">About</Link>
+                    <Link to="/about">About</Link>
                   </li>
                   <li>
-                    <Link to="/cubexican-faq-2-landing-page">Pricing</Link>
+                    <Link to="/">Pricing</Link>
                   </li>
                   <li>
-                    <Link to="/cubexican-faq-2-landing-page/privacy-policy">
-                      Privacy Policy
-                    </Link>
+                    <Link to="/privacy-policy">Privacy Policy</Link>
                   </li>
                 </ul>
               </div>

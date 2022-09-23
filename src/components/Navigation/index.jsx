@@ -10,7 +10,7 @@ export default function Navigation() {
           id="mainnav"
         >
           <div className="container">
-            <Link to="/cubexican-faq-2-landing-page" className="navbar-brand">
+            <Link to="/" className="navbar-brand">
               <img className="logo logo-dark" alt="logo" src={FAQLogo} />
             </Link>
             <button
@@ -33,23 +33,17 @@ export default function Navigation() {
             >
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link
-                    to="/cubexican-faq-2-landing-page/about"
-                    className="nav-link"
-                  >
+                  <Link to="/about" className="nav-link">
                     About
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/cubexican-faq-2-landing-page" className="nav-link">
+                  <Link to="/" className="nav-link">
                     Pricing
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link
-                    to="/cubexican-faq-2-landing-page/privacy-policy"
-                    className="nav-link"
-                  >
+                  <Link to="/privacy-policy" className="nav-link">
                     Privacy Policy
                   </Link>
                 </li>

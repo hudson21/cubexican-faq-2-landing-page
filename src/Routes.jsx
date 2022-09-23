@@ -7,16 +7,9 @@ import AboutPage from './pages/about';
 export default function CustomRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<PricingPage />}></Route>
-      <Route
-        path="cubexican-faq-2-landing-page/privacy-policy"
-        element={<PrivacyPolicyPage />}
-      />
-      <Route
-        path="cubexican-faq-2-landing-page/about"
-        element={<AboutPage />}
-      />
-      <Route path="cubexican-faq-2-landing-page" element={<PricingPage />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/" element={<PricingPage />} />
       <Route path="*" element={<PricingPage />} />
     </Routes>
   );
