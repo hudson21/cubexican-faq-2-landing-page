@@ -16,7 +16,6 @@ function App() {
 
     // Sticky
     var $is_sticky = $('.is-sticky');
-    console.log('$is_sticky', $is_sticky);
     if ($is_sticky.length > 0) {
       var $navm = $('#mainnav').offset();
       $win.scroll(function () {
