@@ -721,7 +721,7 @@ textarea:focus {
   transition: all 0.5s linear;
 }
 .navbar-brand img {
-  max-height: 150%;
+  max-height: 100%;
 }
 
 .site-header {
@@ -942,6 +942,7 @@ textarea:focus {
   top: 115%;
   border: none;
   border-radius: 0;
+  transition: all 0.3s ease-in-out;
 }
 .dropdown-item {
   color: #fff;

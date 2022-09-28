@@ -1,7 +1,17 @@
 import { Link } from 'react-router-dom';
 import FAQLogo from '../../images/faq-logo-try-2.png';
+import useWindowDimensions from '../../hooks/useDimentions';
+import * as $ from 'jquery';
 
 export default function Navigation() {
+  const { width } = useWindowDimensions();
+
+  const handleDropdownMenu = () => {
+    if (width < 991) {
+      $(this).parent().toggleClass('open');
+    }
+  };
+
   return (
     <div className="header-area" id="home">
       <header className="site-header is-sticky">
@@ -32,11 +42,80 @@ export default function Navigation() {
               id="navbarTogglerDemo01"
             >
               <ul className="navbar-nav">
+                <li className="nav-item dropdown">
+                  <span
+                    onClick={handleDropdownMenu}
+                    style={{ cursor: 'pointer' }}
+                    className="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                  >
+                    Documentation <span className="sr-only">(current)</span>
+                  </span>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        href="index-aster-v1.html"
+                      >
+                        Video Explanation
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        href="index-aster-v2.html"
+                      >
+                        Create a FAQ
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        href="index-hosta-v1.html"
+                      >
+                        Create a QA
+                      </Link>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="index-hosta-v2.html">
+                        Use FAQ Theme Extension
+                      </a>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        href="index-hosta-v2.html"
+                      >
+                        Use FAQ Tab Theme Extension
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        href="index-hosta-v2.html"
+                      >
+                        Use SEO Booster Extension
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        href="index-hosta-v2.html"
+                      >
+                        Limitations
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+
                 <li className="nav-item">
                   <Link to="/about" className="nav-link">
                     About
                   </Link>
                 </li>
+
                 <li className="nav-item">
                   <Link to="/" className="nav-link">
                     Pricing

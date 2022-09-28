@@ -7,10 +7,12 @@ import AboutPage from './pages/about';
 export default function CustomRoutes() {
   return (
     <Routes>
-      <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-      <Route path="/about" element={<AboutPage />} />
-      <Route path="/" element={<PricingPage />} />
-      <Route path="*" element={<PricingPage />} />
+      <Route path="/">
+        <Route index element={<PricingPage />} />
+        <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="about" element={<AboutPage />} />
+        <Route path="*" element={<PricingPage />} />
+      </Route>
     </Routes>
   );
 }
