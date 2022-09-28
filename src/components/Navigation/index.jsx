@@ -53,17 +53,14 @@ export default function Navigation() {
                   </span>
                   <ul className="dropdown-menu">
                     <li>
-                      <Link
-                        className="dropdown-item"
-                        href="index-aster-v1.html"
-                      >
+                      <Link className="dropdown-item" to="/documentation/video">
                         Video Explanation
                       </Link>
                     </li>
                     <li>
                       <Link
                         className="dropdown-item"
-                        href="index-aster-v2.html"
+                        to="/documentation/create-faq"
                       >
                         Create a FAQ
                       </Link>
@@ -71,20 +68,23 @@ export default function Navigation() {
                     <li>
                       <Link
                         className="dropdown-item"
-                        href="index-hosta-v1.html"
+                        to="/documentation/create-qa"
                       >
                         Create a QA
                       </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="index-hosta-v2.html">
+                      <Link
+                        className="dropdown-item"
+                        to="/documentation/use-faq-extension"
+                      >
                         Use FAQ Theme Extension
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <Link
                         className="dropdown-item"
-                        href="index-hosta-v2.html"
+                        to="/documentation/use-faq-tab-extension"
                       >
                         Use FAQ Tab Theme Extension
                       </Link>
@@ -93,7 +93,7 @@ export default function Navigation() {
                     <li>
                       <Link
                         className="dropdown-item"
-                        href="index-hosta-v2.html"
+                        to="/documentation/use-seo-booster-extension"
                       >
                         Use SEO Booster Extension
                       </Link>
@@ -102,7 +102,7 @@ export default function Navigation() {
                     <li>
                       <Link
                         className="dropdown-item"
-                        href="index-hosta-v2.html"
+                        to="/documentation/limitations"
                       >
                         Limitations
                       </Link>
@@ -124,6 +124,11 @@ export default function Navigation() {
                 <li className="nav-item">
                   <Link to="/privacy-policy" className="nav-link">
                     Privacy Policy
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/contact" className="nav-link">
+                    Contact
                   </Link>
                 </li>
 
