@@ -14,17 +14,9 @@ function App() {
   useEffect(() => {
     var $win = $(window);
 
-    // Get Window Width
-    function winwidth() {
-      return $win.width();
-    }
-    var wwCurrent = winwidth();
-    $win.on('resize', function () {
-      wwCurrent = winwidth();
-    });
-
     // Sticky
     var $is_sticky = $('.is-sticky');
+    console.log('$is_sticky', $is_sticky);
     if ($is_sticky.length > 0) {
       var $navm = $('#mainnav').offset();
       $win.scroll(function () {
@@ -48,8 +40,7 @@ function App() {
     }
 
     // Bootstrap Dropdown
-    var $dropdown_menu = $('.dropdown'),
-      $dropdown_toggle = $('.dropdown-toggle');
+    var $dropdown_menu = $('.dropdown');
     if ($dropdown_menu.length > 0) {
       $dropdown_menu.on('mouseover', function () {
         if ($win.width() > 991) {
@@ -63,12 +54,6 @@ function App() {
           $(this).removeClass('open');
         }
       });
-      // $dropdown_toggle.on('click', function () {
-      //   console.log('click');
-      //   if ($win.width() < 991) {
-      //     return false;
-      //   }
-      // });
     }
 
     // Nav collapse
@@ -168,14 +153,6 @@ function App() {
         });
       }
     }
-
-    // Active Current Page
-    // var links = $('.navbar ul li a');
-    // $.each(links, function (key, va) {
-    //   if (va.href == document.URL) {
-    //     $(this).addClass('active');
-    //   }
-    // });
   }, []);
 
   return (
