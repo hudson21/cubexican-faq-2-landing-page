@@ -75,81 +75,8 @@ function App() {
       });
     }
 
-    // Ajax Form Submission
-    const contactForm = $('#contact-form'),
-      subscribeForm = $('#subscribe-form');
-    if (contactForm.length > 0 || subscribeForm.length > 0) {
-      if (!$().validate || !$().ajaxSubmit) {
-        console.log('contactForm: jQuery Form or Form Validate not Defined.');
-        return true;
-      }
-      // ContactForm
-      if (contactForm.length > 0) {
-        const selectRec = contactForm.find('select.required'),
-          qf_results = contactForm.find('.form-results');
-        contactForm.validate({
-          invalidHandler: function () {
-            qf_results.slideUp(400);
-          },
-          submitHandler: function (form) {
-            qf_results.slideUp(400);
-            $(form).ajaxSubmit({
-              target: qf_results,
-              dataType: 'json',
-              success: function (data) {
-                const type =
-                  data.result === 'error' ? 'alert-danger' : 'alert-success';
-                qf_results
-                  .removeClass('alert-danger alert-success')
-                  .addClass('alert ' + type)
-                  .html(data.message)
-                  .slideDown(400);
-                if (data.result !== 'error') {
-                  $(form)
-                    .clearForm()
-                    .find('.input-field')
-                    .removeClass('input-focused');
-                }
-              },
-            });
-          },
-        });
-        selectRec.on('change', function () {
-          $(this).valid();
-        });
-      }
-      // SubscribeForm
-      if (subscribeForm.length > 0) {
-        const sf_results = subscribeForm.find('.subscribe-results');
-        subscribeForm.validate({
-          invalidHandler: function () {
-            sf_results.slideUp(400);
-          },
-          submitHandler: function (form) {
-            sf_results.slideUp(400);
-            $(form).ajaxSubmit({
-              target: sf_results,
-              dataType: 'json',
-              success: function (data) {
-                const type =
-                  data.result === 'error' ? 'alert-danger' : 'alert-success';
-                sf_results
-                  .removeClass('alert-danger alert-success')
-                  .addClass('alert ' + type)
-                  .html(data.message)
-                  .slideDown(400);
-                if (data.result !== 'error') {
-                  $(form)
-                    .clearForm()
-                    .find('.input-field')
-                    .removeClass('input-focused');
-                }
-              },
-            });
-          },
-        });
-      }
-    }
+    // Disable form from getting submitted
+    // $('#contact-form').submit(false);
   }, []);
 
   return (
