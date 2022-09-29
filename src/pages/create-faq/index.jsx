@@ -3,7 +3,7 @@ import ImageRender from '../../components/ImageRender';
 
 export default function CreateFAQPage() {
   return (
-    <div className="popular-pricing section-pad-lg section-pad nopb">
+    <div className="section-pad-lg section-pad nopb">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-12 text-center">

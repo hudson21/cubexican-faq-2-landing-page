@@ -58,9 +58,8 @@ function App() {
     // Dropdown Items
     $('.dropdown-item').each(function (item, elem) {
       $(this).on('click', function () {
-        if ($win.width() > 991) {
-          $('.dropdown-menu').removeClass('open');
-        }
+        $('.nav-item.dropdown').removeClass('open');
+        $('.dropdown-menu').hide();
       });
     });
 

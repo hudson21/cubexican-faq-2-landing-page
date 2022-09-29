@@ -747,7 +747,7 @@ textarea:focus {
 .site-header.has-fixed .navbar-brand {
   padding-top: 0;
   padding-bottom: 0;
-  height: 50px;
+  /* height: 50px; */
   transition: all 0.5s linear;
 }
 
@@ -932,8 +932,7 @@ textarea:focus {
 
 @media all and (min-width: 480px) {
   .logo {
-    width: auto;
-    height: auto;
+    max-width: 45%;
   }
 }
 .dropdown-menu {
