@@ -27,8 +27,8 @@ export default function CustomRoutes() {
 
       <Route path="documentation">
         <Route path="video" element={<VideoDocumentationPage />} />
-        <Route path="create-qa" element={<CreateFAQPage />} />
-        <Route path="create-faq" element={<CreateQAPage />} />
+        <Route path="create-qa" element={<CreateQAPage />} />
+        <Route path="create-faq" element={<CreateFAQPage />} />
         <Route path="use-faq-extension" element={<UseFAQExtensionPage />} />
         <Route
           path="use-faq-tab-extension"

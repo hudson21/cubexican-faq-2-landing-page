@@ -12,14 +12,14 @@ import './assets/css/theme.css?ver=100';
 
 function App() {
   useEffect(() => {
-    var $win = $(window);
+    const $win = $(window);
 
     // Sticky
-    var $is_sticky = $('.is-sticky');
+    const $is_sticky = $('.is-sticky');
     if ($is_sticky.length > 0) {
-      var $navm = $('#mainnav').offset();
+      const $navm = $('#mainnav').offset();
       $win.scroll(function () {
-        var $scroll = $win.scrollTop();
+        const $scroll = $win.scrollTop();
         if ($win.width() > 991) {
           if ($scroll > $navm.top) {
             if (!$is_sticky.hasClass('has-fixed')) {
@@ -39,7 +39,7 @@ function App() {
     }
 
     // Bootstrap Dropdown
-    var $dropdown_menu = $('.dropdown');
+    const $dropdown_menu = $('.dropdown');
     if ($dropdown_menu.length > 0) {
       $dropdown_menu.on('mouseover', function () {
         if ($win.width() > 991) {
@@ -55,22 +55,17 @@ function App() {
       });
     }
 
-    // Nav collapse
-    // var $trannav = $('.is-transparent');
-    // $('.menu-link').on('click', function () {
-    //   $('.navbar-collapse').collapse('hide');
-    //   $trannav.removeClass('active');
-    // });
-
-    // $(document).on('mouseup', function (e) {
-    //   if (!$trannav.is(e.target) && $trannav.has(e.target).length === 0) {
-    //     $('.navbar-collapse').collapse('hide');
-    //     $trannav.removeClass('active');
-    //   }
-    // });
+    // Dropdown Items
+    $('.dropdown-item').each(function (item, elem) {
+      $(this).on('click', function () {
+        if ($win.width() > 991) {
+          $('.dropdown-menu').removeClass('open');
+        }
+      });
+    });
 
     // Back to Top
-    var $up_icon = $('.up-icon');
+    const $up_icon = $('.up-icon');
     if ($up_icon.length > 0) {
       $up_icon.on('click', function () {
         $('html').animate({ scrollTop: 0 }, 2000);
@@ -78,7 +73,7 @@ function App() {
     }
 
     // Ajax Form Submission
-    var contactForm = $('#contact-form'),
+    const contactForm = $('#contact-form'),
       subscribeForm = $('#subscribe-form');
     if (contactForm.length > 0 || subscribeForm.length > 0) {
       if (!$().validate || !$().ajaxSubmit) {
@@ -87,7 +82,7 @@ function App() {
       }
       // ContactForm
       if (contactForm.length > 0) {
-        var selectRec = contactForm.find('select.required'),
+        const selectRec = contactForm.find('select.required'),
           qf_results = contactForm.find('.form-results');
         contactForm.validate({
           invalidHandler: function () {
@@ -99,7 +94,7 @@ function App() {
               target: qf_results,
               dataType: 'json',
               success: function (data) {
-                var type =
+                const type =
                   data.result === 'error' ? 'alert-danger' : 'alert-success';
                 qf_results
                   .removeClass('alert-danger alert-success')
@@ -122,7 +117,7 @@ function App() {
       }
       // SubscribeForm
       if (subscribeForm.length > 0) {
-        var sf_results = subscribeForm.find('.subscribe-results');
+        const sf_results = subscribeForm.find('.subscribe-results');
         subscribeForm.validate({
           invalidHandler: function () {
             sf_results.slideUp(400);
@@ -133,7 +128,7 @@ function App() {
               target: sf_results,
               dataType: 'json',
               success: function (data) {
-                var type =
+                const type =
                   data.result === 'error' ? 'alert-danger' : 'alert-success';
                 sf_results
                   .removeClass('alert-danger alert-success')

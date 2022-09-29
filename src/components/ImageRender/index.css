@@ -1,0 +1,88 @@
+.box:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.box {
+  margin: auto;
+  border: 2px solid #f6f6f7;
+  text-align: center;
+  position: relative;
+  transition: 500ms ease;
+}
+.box:before {
+  position: absolute;
+  width: 0;
+  height: 2px;
+  content: '';
+  background: rgb(100, 128, 206);
+  top: -2px;
+  left: -2px;
+  transition: 100ms width ease 300ms;
+  -web-kit-transition: 100ms width ease 300ms;
+}
+.box:after {
+  position: absolute;
+  width: 2px;
+  height: 0;
+  content: '';
+  background: rgb(100, 128, 206);
+  top: -2px;
+  right: -2px;
+  transition: 100ms height ease 200ms;
+  -web-kit-transition: 100ms height ease 200ms;
+}
+.box-inner:after {
+  position: absolute;
+  width: 0;
+  height: 2px;
+  content: '';
+  background: rgb(100, 128, 206);
+  bottom: -2px;
+  right: -2px;
+  transition: 100ms width ease 100ms;
+  -web-kit-transition: 100ms width ease 100ms;
+}
+.box-inner:before {
+  position: absolute;
+  width: 2px;
+  height: 0;
+  content: '';
+  background: rgb(100, 128, 206);
+  bottom: -2px;
+  left: -2px;
+  transition: 100ms height ease 0ms;
+  -web-kit-transition: 100ms height ease 0ms;
+}
+.box:hover {
+  border-color: transparent;
+  background: rgb(100, 128, 206);
+}
+.box:hover:before {
+  width: 100%;
+  transition: 100ms width ease 0ms;
+  -web-kit-transition: 100ms width ease 0ms;
+}
+.box:hover:after {
+  height: 100%;
+  transition: 100ms height ease 100ms;
+  -web-kit-transition: 100ms height ease 100ms;
+}
+.box:hover .box-inner:after {
+  width: 100%;
+  transition: 100ms width ease 200ms;
+  -web-kit-transition: 100ms width ease 200ms;
+}
+.box:hover .box-inner:before {
+  height: 100%;
+  transition: 100ms height ease 300ms;
+  -web-kit-transition: 100ms height ease 300ms;
+}
+
+.image-container {
+  padding: 20px;
+  background-color: white;
+}
+
+.steps-list {
+  text-align: start;
+}
