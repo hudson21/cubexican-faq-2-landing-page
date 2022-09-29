@@ -47,6 +47,10 @@ export default function ContactPage() {
           if (response.ok) {
             setError(false);
             setSuccess(true);
+            setEmail('');
+            setMessage('');
+            setName('');
+
             setTimeout(() => {
               setSuccess(false);
             }, 10000);
