@@ -2,8 +2,14 @@
   margin-top: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .form-results .alert {
+  min-width: 230px;
+}
+
+.form-results .alert:last-child {
   margin-bottom: 0;
 }

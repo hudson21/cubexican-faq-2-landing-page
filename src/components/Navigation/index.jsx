@@ -41,7 +41,7 @@ export default function Navigation() {
               className="collapse navbar-collapse justify-content-end"
               id="navbarTogglerDemo01"
             >
-              <ul className="navbar-nav">
+              <ul className="navbar-nav" style={{ textAlign: 'center' }}>
                 <li className="nav-item dropdown">
                   <span
                     onClick={handleDropdownMenu}

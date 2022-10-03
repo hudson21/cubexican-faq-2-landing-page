@@ -9,7 +9,7 @@ export default function ContactPage() {
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
   const [submitting, setSubmitting] = useState(false);
-  // const [submittedErrors, setSubmittedErrors] = useState([]);
+  const [submittedErrors, setSubmittedErrors] = useState([]);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
 
@@ -34,6 +34,7 @@ export default function ContactPage() {
     event.preventDefault();
     if (isSubmitDisabled) {
       setSubmitting(true);
+      setSubmittedErrors([]);
       fetch('https://formspree.io/f/xyyvjgzz', {
         method: 'POST',
         body: JSON.stringify({ name, email, message }),
@@ -57,9 +58,9 @@ export default function ContactPage() {
           } else {
             response.json().then((data) => {
               if (Object.hasOwn(data, 'errors')) {
-                // setSubmittedErrors(
-                //   data['errors'].map((error) => error['message']).join(', ')
-                // );
+                data['errors'].map((error) =>
+                  setSubmittedErrors(error['message'])
+                );
               } else {
                 setError(true);
               }
@@ -68,6 +69,7 @@ export default function ContactPage() {
         })
         .catch((error) => {
           setError(true);
+          setSubmittedErrors([]);
           setSubmitting(false);
         });
     }
@@ -88,7 +90,6 @@ export default function ContactPage() {
 
                         <form
                           onSubmit={onHandleSubmit}
-                          // id="contact-form"
                           className="form-message"
                         >
                           <div className="row justify-content-center">
@@ -153,9 +154,15 @@ export default function ContactPage() {
                               <SuccessNotification title="Message sent successfully. Thank you for your feedback." />
                             )}
 
-                            {error && (
+                            {error && submittedErrors.length === 0 && (
                               <ErrorNotification title="Something went wrong. Please try again." />
                             )}
+
+                            {error &&
+                              submittedErrors.length > 0 &&
+                              submittedErrors.map((text, index) => (
+                                <ErrorNotification key={index} title={text} />
+                              ))}
                           </div>
                         </form>
                       </div>
