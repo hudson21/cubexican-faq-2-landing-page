@@ -212,8 +212,10 @@ export default function Privacy() {
       <p>
         For more information about our privacy practices, if you have questions,
         or if you would like to make a complaint, please contact us by e-mail at{' '}
-        <strong>cubexican.shopify@gmail.com</strong> or by mail using the
-        details provided below:
+        <strong>
+          <a href="mailto:cubexican.sup@gmail.com">cubexican.sup@gmail.com</a>
+        </strong>
+        or by mail using the details provided below:
         <br />
         <strong>
           800 SE Falcon Lane apt 11, Bentonville, AR, 72712, United States

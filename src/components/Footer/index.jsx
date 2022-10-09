@@ -37,8 +37,8 @@ export default function Footer() {
               <div className="footer-widget">
                 <ul className="footer-list">
                   <li>
-                    <a href="mailto:cubexican.sup.shopify@gmail.com">
-                      cubexican.sup.shopify@gmail.com
+                    <a href="mailto:cubexican.sup@gmail.com">
+                    cubexican.sup@gmail.com
                     </a>
                   </li>
                 </ul>
