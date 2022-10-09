@@ -214,7 +214,7 @@ export default function Privacy() {
         or if you would like to make a complaint, please contact us by e-mail at{' '}
         <strong>
           <a href="mailto:cubexican.sup@gmail.com">cubexican.sup@gmail.com</a>
-        </strong>
+        </strong>{" "}
         or by mail using the details provided below:
         <br />
         <strong>
