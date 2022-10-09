@@ -35,7 +35,7 @@ export default function ContactPage() {
     if (isSubmitDisabled) {
       setSubmitting(true);
       setSubmittedErrors([]);
-      fetch('https://formspree.io/f/xyyvjgzz', {
+      fetch('https://formspree.io/f/maykbndj', {
         method: 'POST',
         body: JSON.stringify({ name, email, message }),
         headers: {
