@@ -312,6 +312,16 @@ export const USE_FAQ_THEME_EXTENSION_STEPS = [
       'Assuming you are user with <strong>BASIC</strong> subscription you will only see <strong>FAQ Design One</strong> app theme block.',
       'Assuming you are user with <strong>PRO</strong> subscription you will see from  <strong>FAQ Design One</strong> to <strong>FAQ Pro Design Eight</strong> app theme blocks, <strong>FAQ Tab Pro Variant 1</strong> and <strong>Seo Booster Pro</strong> in the area of App embeds.',
       'It is worth mentioning that <strong>FAQ Tab Pro Variant 1</strong> and <strong>Seo Booster Pro</strong> will be covered on its own tutorials.',
+      'Remember <strong>FAQ Tab Pro Variant 1</strong> has been changed of name to <strong>Multitasking Tabs</strong>.',
+      'Remember <strong>FAQ Design One</strong> has been changed of name to <strong>Basic</strong>.',
+      'Here are the new name changes applied to the remaining Design Templates:',
+      '<strong>FAQ Design Two</strong> changed to <strong>Pink Lemonade</strong>.',
+      '<strong>FAQ Design Three</strong> changed to <strong>Slick Avocado</strong>.',
+      '<strong>FAQ Design Four</strong> changed to <strong>Pro Shade</strong>.',
+      '<strong>FAQ Design Five</strong> changed to <strong>Blue bubbles</strong>.',
+      '<strong>FAQ Design Six</strong> changed to <strong>Topaz Detachment</strong>.',
+      '<strong>FAQ Design Seven</strong> changed to <strong>Salmon</strong>.',
+      '<strong>FAQ Design Eight</strong> changed to <strong>Mint</strong>.',
     ],
   },
   {
@@ -327,6 +337,7 @@ export const USE_FAQ_THEME_EXTENSION_STEPS = [
     },
     steps: [
       'Once it`s selected the <strong>FAQ Design One</strong> app block, you will see the app block name added in the Apps section marked with a red circle.',
+      'Remember <strong>FAQ Design One</strong> has been changed of name to <strong>Basic</strong>.',
     ],
   },
   {
@@ -343,6 +354,7 @@ export const USE_FAQ_THEME_EXTENSION_STEPS = [
     steps: [
       'Paste the <strong>FAQ Code</strong> you copied in the FAQ List Page to the FAQ ID field marked with a red circle.',
       'There are a serie of options that you can configure in the app block. Most of these <strong>settings</strong> are common among all app block designs, therefore <strong>FAQ Design One</strong> will be the only app design block explained on this documentation. The settings are:',
+      'Remember <strong>FAQ Design One</strong> has been changed of name to <strong>Basic</strong>.',
       '<strong>FAQ Accordion Width</strong>: To change the width of the FAQ accordion.',
       '<strong>FAQ Accordion Margin Top and Bottom</strong>: To change margin top and bottom of the FAQ accordion.',
       '<strong>Show FAQ Title Checkbox</strong>: To decide if the FAQ Title is shown or not.',
@@ -422,6 +434,7 @@ export const USE_FAQ_THEME_EXTENSION_STEPS = [
     steps: [
       'Click on the <strong>Save</strong> button to save the changes.',
       'The FAQ Design One app block makred with a red circle is ready to be used in your store once you provide the settings previously mentioned.',
+      'The <strong>FAQ Design One</strong> app block name has been changed to <strong>Basic</strong>',
     ],
   },
 ];
@@ -429,9 +442,9 @@ export const USE_FAQ_THEME_EXTENSION_STEPS = [
 export const USE_FAQ_TAB_PRO_THEME_EXTENSION_STEPS = [
   {
     id: 1,
-    name: 'How to use more than one FAQ Code with the FAQ Tab Pro Variant 1 block theme extension in the Store Theme Editor',
+    name: 'How to use more than one FAQ Code with the FAQ Tab Pro Variant 1 block theme extension in the Store Theme Editor. FAQ Tab Pro Variant 1 has been changed of name to Multitasking Tabs.',
     description:
-      'Steps to use a more than one created FAQ inside of the Store Theme Editor with the FAQ Tab Pro Variant 1 block theme extension.',
+      'Steps to use a more than one created FAQ inside of the Store Theme Editor with the FAQ Tab Pro Variant 1 block theme extension. FAQ Tab Pro Variant 1 has been changed of name to Multitasking Tabs',
     imageSrc: UseFAQStep1TabThemeAppExtensionImageSrcDesktop,
     mobileSrc: UseFAQStep1TabThemeAppExtensionImageSrcMobile,
     useEscapedHTML: true,
@@ -442,6 +455,7 @@ export const USE_FAQ_TAB_PRO_THEME_EXTENSION_STEPS = [
     steps: [
       'Look for the <strong>Apps</strong> Section in the Store Theme Editor <strong>(</strong>.',
       'Look for <strong>FAQ Tab Pro Variant 1</strong> block theme extension and click on it.',
+      'Remember <strong>FAQ Tab Pro Variant 1</strong> has been changed of name to <strong>Multitasking Tabs</strong>.',
       'These steps can be found on the first and second screenshots of Tab name <em><strong>Use FAQ Theme Extension</strong></em><strong>)</strong>',
     ],
   },
@@ -532,6 +546,7 @@ export const USE_FAQ_TAB_PRO_THEME_EXTENSION_STEPS = [
     steps: [
       'Click on the <strong>Save</strong> button to save the changes.',
       'Once you have provided the settings previously mentioned, the FAQ Tab Pro Variant 1 app block is ready to be used in your store.',
+      'Remember <strong>FAQ Tab Pro Variant 1</strong> has been changed of name to <strong>Multitasking Tabs</strong>.',
     ],
   },
 ];
