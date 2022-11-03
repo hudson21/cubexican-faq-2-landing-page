@@ -15,7 +15,7 @@ export default function PricingPage() {
                 </h1>
                 <p className="lead">
                   Choose the best plan that fits your requirements for
-                  cubexian-faq-2 shopify app.
+                  cubexican-faq-2 shopify app.
                 </p>
               </div>
             </div>
