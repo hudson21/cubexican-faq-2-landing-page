@@ -76,7 +76,7 @@ export default function PricingPage() {
                   <br />
                   <br />
                 </ul>
-                <a href="#" className="btn-lg btn-price">
+                <a href="https://apps.shopify.com/cubexican-faq" className="btn-lg btn-price">
                   Subscribe
                 </a>
               </div>
@@ -112,7 +112,7 @@ export default function PricingPage() {
                     <strong>24/7</strong> Support
                   </li>
                 </ul>
-                <a href="#" className="btn-lg btn-price">
+                <a href="https://apps.shopify.com/cubexican-faq" className="btn-lg btn-price">
                   Subscribe
                 </a>
               </div>
